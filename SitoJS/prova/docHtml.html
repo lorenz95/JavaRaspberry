@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+ <head>
+	<title>Pagina di consultazione</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="dataDisplay.js"></script>
+
+	<style>
+
+	h1 {
+	 margin: auto;
+	 width: 50%;
+	}
+
+	 form {
+	  margin: 0 auto;
+	  width: 50%;
+	 }
+
+	 table, td, th {
+	  border: 1px solid blue;
+	  text-align: left;
+	 }
+
+	 table {
+	  position: absolute;
+	  border-collapse: collapse;
+	  width: 20%;
+	  top: 10%;
+	 }
+
+	#tempTable {
+	 left: 5%;
+	}
+
+	#presTable {
+	 left: 40%;
+	 right: 5%;
+	}
+
+	 td, th {
+	  margin-right: 10%;
+	  padding-right: 5%;
+	 }
+	 
+	 td {
+	  height: 20px;
+	  text-align: center;
+	 }
+	</style>
+
+ </head>
+ <body id="pagina">
+ 	<div class="divContent" id="divMain">
+	 <h1>Tracker: Consultazione Dati</h1>
+	<hr>
+	 <form id="comand">
+	  <label for="datiTemp">Dati temperature</label>
+	  <input type="button" id="datiTemp" value="temperature"></input>
+	  <label for="datiPres">Dati presenze</label>
+	  <input type="button" id="datiPres" value="presenze"></input>
+	 </form>
+ 	</div>
+	
+	<div class="divContent" id="divTable">
+	  <table id="tempTable">
+	    <tr>
+	     <th>
+		TABELLA temperatura
+	     </th>
+	    </tr>
+	    <tr>
+	     <td>
+		RIGA 1
+	     </td>
+	    </tr>
+	  </table>
+
+	  <table id="presTable">
+	    <tr>
+	     <th>
+	       TABELLA presenza
+	     </th>
+	    </tr>
+	    <tr>
+	     <td>
+	       RIGA 1
+	     </td>
+	    </tr>
+	  </table>
+	</div>
+	<hr>
+ </body>
+</html>
